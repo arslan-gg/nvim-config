@@ -86,5 +86,33 @@ local plugins = {
       },
     },
   },
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim"
+    },
+    config = function()
+      require("telescope").load_extension("file_browser")
+    end,
+    init = function()
+      require("core.utils").load_mappings("file_browser")
+    end,
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+          layout_strategy = "vertical",
+          layout_config = {
+              height = 0.95,
+              prompt_position = "bottom",
+              vertical = {
+                  preview_cutoff = 0,
+              },
+          },
+      },
+    },
+  },
 }
 return plugins

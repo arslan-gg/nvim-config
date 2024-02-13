@@ -63,4 +63,14 @@ M.gopher = {
   }
 }
 
+M.file_browser = {
+  plugin = true,
+  n = {
+    ["<leader>fb"] = {
+      "<cmd> Telescope file_browser <CR>",
+      "Open file browser"
+    }
+  }
+}
+
 return M
