@@ -11,9 +11,12 @@ Inspired by the setup featured on [DreamOfCode](https://www.youtube.com/watch?v=
   - Implement `go install mvdan.cc/gofumpt@latest` for code formatting adhering to Go standards.
   - Use `go install github.com/segmentio/golines@latest` for automatic line length adjustments.
   - Install the debugger with `go install github.com/go-delve/delve/cmd/dlv@latest`.
+- To set up CopilotChat.nvim, execute the following command: `pip install python-dotenv requests pynvim==0.5.0 prompt-toolkit`
 - After the installations, move your configuration files to the `~/.config/nvim/lua/custom` directory.
+- Ensure Python3 is installed and update the path to its executable in `~/.config/nvim/lua/custom/init.lua`.
 - Launch NeoVim, and switch your theme to *catppuccin* by pressing `Space t h`.
 - To install all necessary plugins and tools, enter `:MasonInstallAll`.
+- To enable CopilotChat dependencies, execute the command: `:UpdateRemotePlugins`.
 - Finally, to support Golang syntax, run `:TSInstall go`.
 
 ## Cheat Sheet:
